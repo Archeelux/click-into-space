@@ -4,5 +4,15 @@ title: Home Page
 ---
 
 <div>
-    <button id="btn_Clicker" class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300">⛽</button>
+
+    <div>
+        <p>⛽ <span data-bind="text: fuel">0</span></p>
+    </div>
+
+    <button 
+        data-bind="click: clickFuel"
+        id="btn_Clicker" 
+        class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300">
+        ⛽
+    </button>
 </div>

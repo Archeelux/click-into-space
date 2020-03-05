@@ -12,11 +12,28 @@ title: Home Page
         </div>
 
         <button 
-        data-bind="click: clickFuel"
-        id="btn_Clicker" 
-        class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300">
-        ⛽
-    </button>
+            data-bind="click: clickFuel"
+            id="btn_Clicker" 
+            class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300">
+            ⛽
+        </button>
+
+        {# Fuel Shop #}
+        <div class="mt-2">
+            <button class="flex button-outline border-black border-2 p-2">
+                <div class="pr-2 text-5xl flex-1">
+                    <span>🧑</span>
+                </div>
+                <div class="pr-2 flex-1">
+                    <p>
+                        <span>Auto-Fuel</span></p>
+                    <p>💲<span></span></p>
+                </div class="flex-1">
+                <div class="text-5xl">
+                    <span>0</span>
+                </div>
+            </button>
+        </div>
 
     </div>
 

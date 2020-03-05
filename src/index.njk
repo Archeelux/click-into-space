@@ -3,16 +3,37 @@ layout: global/base.njk
 title: Home Page
 ---
 
-<div>
+<div class="flex justify-between">
 
     <div>
-        <p>⛽ <span data-bind="text: fuel">0</span></p>
-    </div>
 
-    <button 
+        <div>
+            <p>⛽ <span data-bind="text: fuel">0</span></p>
+        </div>
+
+        <button 
         data-bind="click: clickFuel"
         id="btn_Clicker" 
         class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300">
         ⛽
     </button>
+
+    </div>
+
+    <div>
+
+        <div>
+            <p>🚀 <span data-bind="text: speed">0</span></p>
+        </div>
+
+        <button
+        data-bind="click: clickSpeed"
+        id="btn_clickLaunch"
+        class="button-outline border-black border-2 text-5xl p-5 hover:bg-gray-300"
+    >
+        🔥
+    </button>
+
+    </div>
+
 </div>

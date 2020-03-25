@@ -20,17 +20,17 @@ title: Home Page
 
         {# Fuel Shop #}
         <div class="mt-2">
-            <button class="flex button-outline border-black border-2 p-2">
+            <button data-bind="click: clickBuyAutoFuelUpgrade" class="flex button-outline border-black border-2 p-2">
                 <div class="pr-2 text-5xl flex-1">
                     <span>🧑</span>
                 </div>
                 <div class="pr-2 flex-1">
                     <p>
                         <span>Auto-Fuel</span></p>
-                    <p>💲<span></span></p>
+                    <p>💲<span data-bind="text: autoFuelCost"></span></p>
                 </div class="flex-1">
                 <div class="text-5xl">
-                    <span>0</span>
+                    <span data-bind="text: autoFuelCount"></span>
                 </div>
             </button>
         </div>
